@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid white; */
+}
+                                                     /* Sections */
+#section-1{
+    background-color: crimson;
+    color: aliceblue;
+}
+#section-2{
+    background-color: blue;
+    color: aliceblue;
+}
+#section-3{
+    background-color: rgb(255, 98, 0);
+    color: aliceblue;
+}
+
+                                           /* section-wrapper */
+.section-wrapper{
+    padding: 21px 0px;
+}
+
+                                              /* container */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+                                              /* main-text */
+.main-text{
+    text-align: center;  
+}
+
+                                                 /* row */
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+                             /* col-30 of row - there are three col-30 in row */
+.col-30{
+    width: 33.33%;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px 20px;
+}
+
+                          /* because of different background color we add this */
+#section-2 .col-30{
+    background-color:blue;
+}
+
+                     /* for all circle in this website , we apply these properties */
+div[class*="circle"]{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+                                 /* background images in circle */
+.circle-1{
+    background: url(/SHUSHI/images/dog.jpg)no-repeat center center/cover;
+}
+.circle-2{
+    background: url(/SHUSHI/images/download.jpeg)no-repeat center center/cover;
+}
+.circle-3{
+    background: url(/SHUSHI/images/image-de-paysage.jpg)no-repeat center center/cover;
+}
+
+
+       /* we use child selector because of different different background images in section-2 */
+
+#section-2 .circle-1{
+    background: url(/SHUSHI/images/blue-shape-1.png)no-repeat center center/cover;
+}
+#section-2 .circle-2{
+    background: url(/SHUSHI/images/dog.jpg)no-repeat center center/cover;
+}
+#section-2 .circle-3{
+    background: url(/SHUSHI/images/Image_created_with_a_mobile_phone.png)no-repeat center center/cover;
+}
+
+                                         /* h2 of main text */
+h2{
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+                                           /* h3 of col-30 */
+h3{
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+                 /* in this h2+p is used to describe the paragaraph, is a adjacent of h2 and in this h3+p is used to describe the paragaraph, is a adjacent of h3 */
+
+h2+p , h3+p{
+    font-size: 20px;
+    margin: 20px 50px;
+}
+
+          /* for all circle in section-3 , we apply these properties due to some different properties */
+
+#section-3 div[class*="cir"]{
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 280px;
+    height: 280px;
+    background-color:rgb(255, 98, 0) ;
+}
+
+               /* it is used to describe the some unique properties of col-30 in section-3 */
+#section-3 .col-30{
+    background-color: rgb(255, 98, 0);
+   padding-left: 50px;
+}
+
+                /* it is used to describe the some unique properties of h3 in section-3 */
+#section-3 h3{
+    font-size: 80px;
+    padding-top: 30px;
+}
+
+                /* it is used to describe the some unique properties of h3+p in section-3 */
+#section-3 h3+p{
+    font-size: 50px;
+    margin: 20px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        /* Media query for make this website resposive */
+
+
+
+
+@media (max-width: 800px){
+    .row{
+        flex-direction: column;
+        justify-content: center;
+    }
+    div[class*="circle"]{
+        width: 150px;
+        height: 150px;
+    }
+    #section-2 div[class*="cir"]{
+        width: 200px;
+        height: 200px; 
+    }
+    #section-3 div[class*="cir"]{
+        width: 180px;
+        height: 180px; 
+    }
+    .col-30{
+        width: 50%;
+        margin: 0px 20px 10px 20px; 
+    }
+    #section-3 h3{
+        font-size: 50px;
+        padding-top: 20px;
+    }
+    #section-3 h3+p{
+        font-size: 30px;
+        margin: 20px 50px;
+    }
+    #section-3 .col-30{
+       padding-left: 80px;
+       margin-left: 100px;
+    }
+    
+
+
+
+}

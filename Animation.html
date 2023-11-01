@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .box
+        {
+            height:50vh;
+            border:3px solid blueviolet;
+            background-color:red;
+            animation-name:lightroom;
+            animation-duration:5s;
+            animation-iteration-count: 3;
+            animation-direction:alternate-reverse;
+            animation-timing-function:linear;
+        }
+        @keyframes lightroom{
+            0%{
+                background:teal;
+
+            }
+            20%{
+                background:crimson;
+            }
+            40%{
+                background:blue;
+            }
+            60%{
+                background:red;
+            }
+            100%{
+                background:rgb(255, 208,0);
+            }
+        }
+        .box1
+        {
+            height:50vh;
+            width:50vh;
+
+            border:2px solid #000;
+            background:blue
+            animation-name:Jay;
+            animation:duretion:5s;
+            animation-direction:alternate;
+        }
+        @keyframes Jay{
+            from{
+                margin-left:20px;
+            }
+            to{
+                margin-right:50px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="box"></div>
+     <div class="box1"></div>
+</body>
+</html>

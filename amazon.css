@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    border:border-box;
+}
+.navbar{
+    height:60px;
+    background:#0f1111;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.nav-logo{
+    height:50px;
+    width:100px;
+}
+.logo{
+    background:url("C:\Users\Vidit\Desktop\CSS\SHUSHI\images\amazon.png");
+    background-size:cover;
+    height:50px;
+    width:100px;
+}
+.nav-search{
+    display:flex;
+    background-color:pink;
+    width:620px;
+    height:40px;
+    border-radius:4px;
+}
+.search select{
+    background-color:#f3f3f3;
+    width:50px;
+    text-align:center;
+    border:none;
+}
+.search-input{
+    width:100%;
+    font-size:1rem;
+    border:none;
+}
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2rem;
+    background-color:#febd68;
+}
+.nav-search:hover{
+    border:2px solid orange;
+}
+.span{
+    font-size:085rem;
+    font-weight: 700;
+
+}
+.nav-cart{
+    font-size:30px;
+    font-width:
+}
